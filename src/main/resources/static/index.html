@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Application</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="scriptUpdate.js"></script>
+    <script type="text/javascript" src="scriptGet.js"></script>
+    <script type="text/javascript" src="scriptAdd.js"></script>
+    <script type="text/javascript" src="scriptDelete.js"></script>
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<main>
+<div class="menu">
+<ul>
+    <li ><a href="#"><h3 class="name">Laptops Inventory</h3></a></li>
+    <li><a onclick=" loadInventory()" href="javascript:void(0);">All Laptops</a></li>
+    <li><a onclick="addData()" href="javascript:void(0);">Add Laptop</a></li>
+</ul>
+
+</div>
+
+<div>
+    <h1>Laptops</h1>
+
+
+
+    <div class="divTable">
+
+        <div class="btnAdd"><button id="addData" onclick="addData()">Add Laptop</button></div>  
+
+        <div class="divTableBody">
+            <div class="divTableHeading">
+
+                    <div class="divTableHead">Brand</div>
+                    <div class="divTableHead">Model</div>
+                    <div class="divTableHead">Price</div>
+                    <div class="divTableHead">Actions</div>
+            </div>
+            <div id='divTableContent'></div>
+        </div>
+    </div>
+
+ 
+
+    <div id='addMessageNew'></div>
+    <div id='addMessageUpdate'></div>
+    <div class="updateRow"></div>
+    
+
+
+</div>
+</main>
+<footer>Copyright 2020 - By Elmerrr</footer>
+</body>
+
+</html>
