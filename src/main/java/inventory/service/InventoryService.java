@@ -26,13 +26,13 @@ public class InventoryService {
     //CREATE
     public boolean addInventory(Inventory item) {
         System.out.println("addInventory Service method invoked");
-        if(inventoryDao.exists(item.getBrand(), item.getModel(), item.getPrice())){
-            System.out.println("Item already exists!");
-            return false;
-        }else{
+//        if(inventoryDao.exists(item.getBrand(), item.getModel(), item.getPrice())){
+//            System.out.println("Item already exists!");
+//            return false;
+//        }else{
             inventoryDao.create(item);
             return true;
-        }
+       // }
     }
 
     //UPDATE
